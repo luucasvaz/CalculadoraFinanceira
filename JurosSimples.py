@@ -8,6 +8,4 @@ montante = round(principal + (principal * (taxa * tempo)), 2)
 montante_str = str(montante).replace('.', ',')
 juros = round((montante - principal), 2)
 juros_str = str(juros).replace('.', ',')
-print(
-    'O total acumulado no período será de R$ ' + montante_str + '. Os juros acumulados no período é de R$ ' + juros_str + '.'
-)
+print(f'O total acumulado no período será de R$ {montante_str}. Os juros acumulados no período é de R$ {juros_str}.')
